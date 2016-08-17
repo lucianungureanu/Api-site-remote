@@ -3,7 +3,7 @@ Librarie (online)
 
 Se creeaza baza de date.
 
-Se face sincronizare si  verificare cu o cheie sa ia informatiile de pe server.
+Se face sincronizare si  verificare cu o cheie care ia informatiile de pe server.
 
 Se construieste o clasa si 4 methode:
 
