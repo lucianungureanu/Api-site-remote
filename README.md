@@ -1,5 +1,6 @@
 # Librarie
 Librarie (online)
+
 Se creeaza baza de date.
 
 Se face sincronizare si  verificare cu o cheie sa ia informatiile de pe server.
