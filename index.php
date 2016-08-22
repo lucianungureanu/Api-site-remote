@@ -10,7 +10,7 @@ $info = false;
 if(isset($_SESSION['permision']) && $_SESSION['permision'] == 'allow' ){
 
 
-//adaugare
+	//add
 if(isset($_POST['name']) && isset($_POST['hook_action']) && $_POST['hook_action'] == 'add'){
 $data = array(
 	'action' => 'add',
@@ -21,8 +21,9 @@ $data = array(
 	);
 $api3 = new Api($data);
 }
+ 	// delete
 if(isset($_GET['id']) && isset($_GET['hook']) &&$_GET['hook'] == 'delete' ){
-	// delete
+	
 	$data = array(
 	'action' => 'delete',
 	'entity_type' => 'books',
@@ -33,9 +34,9 @@ if(isset($_GET['id']) && isset($_GET['hook']) &&$_GET['hook'] == 'delete' ){
 	header("Location: ".$base_url);
 	exit();
 }
-
+        //update_1
 if(isset($_POST['hook_action']) && $_POST['hook_action'] == 'edit'){
-	// //update
+	
 	$data = array(
 		'action' => 'update',
 		'entity_type' => 'books',
@@ -51,9 +52,9 @@ if(isset($_POST['hook_action']) && $_POST['hook_action'] == 'edit'){
 	header("Location: ".$base_url);
 	exit();
 }
+	// update_2
 if(isset($_GET['id']) && isset($_GET['hook']) &&$_GET['hook'] == 'edit' ){
 	$info = true;
-	// delete
 	$data = array(
 	'action' => 'info',
 	'entity_type' => 'books',
@@ -64,14 +65,14 @@ if(isset($_GET['id']) && isset($_GET['hook']) &&$_GET['hook'] == 'edit' ){
 	$info_item = json_decode($api2->response);
 }
 
-//get list
-$data = array(
-	'action' => 'all',
-	'entity_type' => 'books'
-	);
-$api = new Api($data);
-
-$books = json_decode($api->response);
+	//get list
+	$data = array(
+		'action' => 'all',
+		'entity_type' => 'books'
+		);
+	$api = new Api($data);
+	
+	$books = json_decode($api->response);
 
 ?>
 <html>
@@ -79,8 +80,8 @@ $books = json_decode($api->response);
 <title>Rest Api</title>
 
 
-			<!-- Latest compiled and minified CSS -->
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+	link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
@@ -147,35 +148,35 @@ foreach ($books as $key => $book) { ?>
 <?php }else{
 
 //login
-$errors = '';
-if(isset($_POST['name']) && isset($_POST['hook_action']) && isset($_POST['password']) && $_POST['hook_action'] == 'login'){
-$data = array(
-	'action' => 'login',
-	'name' => $_POST['name'],
-	'password' => md5($_POST['password'])
-	);
-$api3 = new Api($data);
-$status= $api3->response;
-if($status == true){
-	$_SESSION['permision'] = 'allow';
-	header("Location: ".$base_url);
-	exit();
-
-}else{
-	$errors = 'Autentificare esuata';
-}
-
+	$errors = '';
+	if(isset($_POST['name']) && isset($_POST['hook_action']) && isset($_POST['password']) && $_POST['hook_action'] == 'login'){
+	$data = array(
+		'action' => 'login',
+		'name' => $_POST['name'],
+		'password' => md5($_POST['password'])
+		);
+	$api3 = new Api($data);
+	$status= $api3->response;
+	if($status == true){
+		$_SESSION['permision'] = 'allow';
+		header("Location: ".$base_url);
+		exit();
+	
+	}else{
+		$errors = 'Autentificare esuata';
+	 }
+	
 }
 
 ?>
-    <html>
+<html>
 <head>
 <title>Rest Api</title>
 
 
-			<!-- Latest compiled and minified CSS -->
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-			 </head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
 
 <body>
 <div class="container">
@@ -199,6 +200,4 @@ echo $errors; ?>
 </form>
 </div>
 </body>
-<?php
-
-	} ?>
+<?php } ?>
