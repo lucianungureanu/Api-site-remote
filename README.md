@@ -29,7 +29,7 @@ III. Tehnologii folosite
 
 ●     JSON
 
-IV. Strucutra baza de date
+IV. Structura baza de date
 
 
 TABLE books(
