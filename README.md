@@ -2,8 +2,9 @@
 
 I. Continut arhiva
 
-- api/ - folderul cu fisierul de conectare si cel cu clasa;
-- index.html - fisierul pentru rulare;
+- api/config.php - contine url pentru api si cheia de autorizare;
+- api/ApiClass.php - face legatura intre api(Site) si fisierul care se conecteaza la baza de date(Api);
+- index.html - afiseaza datele, contine formularele pentru inserarea,editarea si stergerea datelor;
 - README - fisierul cu explicatiile aferente.
 
 II. Functionalitate
