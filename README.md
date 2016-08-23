@@ -9,14 +9,5 @@ I. Continut arhiva
 
 II. Functionalitate
 
-Conectarea cu baza de date se face prin (config.php).
+In arhiva (Site) se afla Api-ul propiuzis, acesta se conecteaza la arhiva/aplicatia (Api), ce contine conectarea cu baza de date.
 
-In fisierul (ApiClass.php) se gaseste clasa cu metodele:
-
-- functia de insert;
-- functia de delete;
-- functia de update;
-- functia de afisare;
-- functia de autentificare.
-
-In fisierul (index.php) se afla metoda de autentificare cu cheie si apelarea functiilor.
