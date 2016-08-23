@@ -7,7 +7,9 @@ I. Continut arhiva
 - api/ApiClass.php - face legatura intre api(Api-site-remote) si fisierul care se conecteaza la baza de date(Api-db-connect);
 - index.html - afiseaza datele, contine formularele pentru inserarea,editarea si stergerea datelor;
 - README - fisierul cu explicatiile aferente.
-============================================================================================================================
+
+
+
 II. Functionalitate
 
 In arhiva (Api-site-remote) se afla Api-ul propiuzis, acesta se conecteaza la arhiva/aplicatia (Api-db-connect), ce contine conectarea cu baza de date.
