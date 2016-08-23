@@ -29,3 +29,21 @@ III. Tehnologii folosite
 
 ●     JSON
 
+IV. Strucutra baza de date
+
+
+TABLE books(
+id int,
+name varchar(255),
+status varchar(255),
+author varchar(255),
+year int,
+data_add date
+);
+
+TABLE users(
+id int,
+name varchar(255),
+password varchar(32)
+);
+
