@@ -8,7 +8,7 @@ I. Continut arhiva
 - index.html - afiseaza datele, contine formularele pentru inserarea,editarea si stergerea datelor;
 - README - fisierul cu explicatiile aferente.
 - 
-=================================================================================================================================
+============================================================================================================================
 
 II. Functionalitate
 
