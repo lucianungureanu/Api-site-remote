@@ -16,5 +16,5 @@ In arhiva (Api-site-remote) se afla Api-ul propiuzis, acesta se conecteaza la ar
 
 Pentru a accesa formularele care insereaza, editeaza, sterg datele din baza de date trebuie sa fii autentificat.
 
-Datele se trimit prin post. Se face sincronizare si verificare cu o cheie care ia informatiile de pe server sa nu poate trimite oricine date.
+Datele se trimit prin post. Se face sincronizare si verificare cu o cheie pentru a nu trimite oricine date.
 
