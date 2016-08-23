@@ -12,7 +12,7 @@ I. Continut arhiva
 
 II. Functionalitate
 
-In arhiva (Api-site-remote) se afla Api-ul propiuzis, acesta se conecteaza la arhiva/aplicatia (Api-db-connect), ce contine conectarea cu baza de date.
+In arhiva (Api-site-remote) se afla Api-ul propiu zis, acesta se conecteaza la arhiva/aplicatia (Api-db-connect), ce contine conectarea cu baza de date.
 
 Pentru a accesa formularele care insereaza, editeaza, sterg datele din baza de date trebuie sa fii autentificat.
 
