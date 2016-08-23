@@ -18,3 +18,11 @@ Pentru a accesa formularele care insereaza, editeaza, sterg datele din baza de d
 
 Datele se trimit prin post. Se face sincronizare si verificare cu o cheie pentru a nu trimite oricine date.
 
+
+III. Tehnologii folosite
+
+●     PHP
+●     Bootstrap
+●     MySQL
+●     JSON
+
