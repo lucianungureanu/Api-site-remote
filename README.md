@@ -22,7 +22,6 @@ Datele se trimit prin post. Se face sincronizare si verificare cu o cheie pentru
 III. Tehnologii folosite
 
 ●     PHP
-
 ●     Bootstrap
 
 ●     MySQL
